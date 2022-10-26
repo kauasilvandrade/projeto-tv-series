@@ -1,0 +1,7 @@
+/* FONTE */
+@font-face {
+    font-family: 'Proximanovacond';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Mark\ Simonson\ \ Proxima\ Nova\ Condensed\ Thin\ TheFontsMaster.com.woff') format('woff');
+}
