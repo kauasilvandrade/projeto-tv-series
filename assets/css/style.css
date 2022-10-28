@@ -1,3 +1,26 @@
+@charset "UTF-8";
+
+/* PALETA DE CORES e FONTES */
+:root {
+    --cor1: #FFF;
+    --cor2: #333333;
+    --cor3: #737373;
+    --cor4: #c4c2c2;
+    --cor5: #adadad;
+    --cor6: #817e79b3;
+    --cor7: #ff9317;
+    --cor8: #ffc917;
+    --cor9: #f2be5c;
+    --cor10: #44dbd6;
+    --cor11: #cc78f080;
+    --cor12: #60db44;
+    --cor13: #95db4f80;
+
+    --sans-pro: 'Source Sans Pro', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --promoximanovacond: 'Proximanovacond';
+}
+
 /* FONTE */
 @font-face {
     font-family: 'Proximanovacond';
@@ -5,3 +28,75 @@
     font-weight: 400;
     src: url('../fonts/Mark\ Simonson\ \ Proxima\ Nova\ Condensed\ Thin\ TheFontsMaster.com.woff') format('woff');
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GRID 2 COLUNAS */
+body {
+    display: grid;
+    grid-template-columns: 95px 1fr;
+}
+
+/* ASIDE */
+.sidebar {
+    background-color: var(--cor1);
+}
+
+.sidebar .logo {
+    background-color: #ffb10a;
+    padding: 1.7rem 0.9rem 1.5rem 0.9rem;
+}
+
+.sidebar .logo img {
+    width: 100%;
+}
+
+.lista-links {
+    list-style: none;
+}
+
+.lista-links .item {}
+
+.lista-links .item a {
+    display: block;
+    text-decoration: none;
+    color: var(--cor5);
+    font-family: var(--sans-pro);
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 1.6rem 0rem 1rem 0rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.lista-links .item a:hover {
+    background-color: #ededed;
+    color: #c2c2c2;
+    transition: all 0.15s ease-in 0s;
+    box-shadow: inset 3px 0px 0px 0px var(--cor8);
+}
+
+.lista-links .item a img {
+    display: block;
+    width: 25px;
+    margin: auto auto 0.5rem auto;
+}
+
+.lista-links .item a #alerta-numero {
+    background-color: #17d8ff;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    right: 1.6rem;
+    top: 1.3rem;
+    font-size: 0.9em;
+    height: 19px;
+    width: 19px;
+}
+
+.lista-links .item a span {}
