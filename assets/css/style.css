@@ -423,3 +423,216 @@ body {
     color: var(--cor2);
     transition: all 0.15s ease-in 0s;
 }
+
+/* CONTEÚDO */
+.conteudo {}
+
+/* CARD Inglourious Basterds */
+#inglouriousBasterds {}
+
+.card-filme {}
+
+/* BOTÃO PLAY */
+.card-filme a {}
+
+.card-filme a img {}
+
+/* CREDITOS E TÍTULO DO FILME */
+.card-filme .titulo-creditos {}
+
+.titulo-creditos .legenda {}
+
+.titulo-creditos h2 {}
+
+.titulo-creditos .creditos-elenco {}
+
+.titulo-creditos .creditos-elenco .nota {}
+
+.titulo-creditos .creditos-elenco p {}
+
+/* CARD Toy Story 3 */
+#toyStory {}
+
+/* CARD The Amazing Spiderman */
+#spiderMan {}
+
+/* CARD Scott Pilgrim vs. the World */
+#scootPilgrim {}
+
+/* CARD Scarlett Johansson */
+#scatlettJohansson {}
+
+.card-noticia {}
+
+.card-noticia .legenda-titulo {}
+
+.card-noticia .legenda-titulo .span {}
+
+.card-noticia .legenda-titulo h2 {}
+
+/* CARD House of Cards */
+#houseCards {}
+
+.card-noticia .legenda-titulo .tempo-site {}
+
+/* BOX OLIVIA */
+#olivia {}
+
+.box-ator {}
+
+/* NOTÍCIAS DE CELEBRIDADES */
+.celebrity-news {}
+
+.celebrity-news h3 {}
+
+.celebrity-news h2 {}
+
+.celebrity-news .tempo-publicacao {}
+
+/* RANK DE PESSOAS */
+.aside-rank-pessoas {}
+
+.aside-rank-pessoas p {}
+
+.lista-rank {}
+
+.lista-rank .pessoa {}
+
+.lista-rank .pessoa .img-nome {}
+
+.lista-rank .pessoa .img-nome img {}
+
+.lista-rank .pessoa .img-nome .nome {}
+
+.lista-rank .pessoa .classificacao {}
+
+/* BOX RIHANNA */
+#rihanna {}
+
+/* CARD QUENTIN TARANTINO */
+#quentinTarantino {}
+
+.card-noticia .legenda-titulo .tempo-publicacao {}
+
+/* CARD JERSEY BOYS */
+#jerseyBoys {}
+
+.card-noticia .titulo {}
+
+.card-noticia .titulo h2 {}
+
+.card-noticia .titulo .tempo-publicacao {}
+
+/* SHOW TWITTER  */
+.show-twitter {}
+
+.show-twitter img {}
+
+.show-twitter p {}
+
+.show-twitter .img-name-instagram {}
+
+.show-twitter .img-name-instagram img {}
+
+.show-twitter .img-name-instagram .name-inst {}
+
+/* VIDEO MISS SUSHINE */
+.card-video {}
+
+.card-video a {}
+
+.card-video a img {}
+
+.card-video .legenda-titulo  {}
+
+.card-video .legenda-titulo .legenda {}
+
+.card-video .legenda-titulo h2 {}
+
+/* CARD LEONARDO DICAPRIO */
+#leonardoDiCaprio {}
+
+.card-noticia .legenda-titulo .tempo-publicacao {}
+
+/* LONGAS METRAGENS DE ROMANCE */
+.longas-metragens {}
+
+.longas-metragens h2 {}
+
+.longas-metragens .tempo-publicacao {}
+
+/* CARD NOLAN BATMAN */
+#nolanBatman {}
+
+/* CITAÇÃO TWITTER */
+.citacao-twitter {}
+
+.citacao-twitter .aspas {}
+
+.citacao-twitter h2 {}
+
+.show-twitter .img-name-instagram {}
+
+.show-twitter .img-name-instagram img {}
+
+.show-twitter .img-name-instagram .name-inst {}
+
+/* CARD VINGADORES */
+#vingadores {}
+
+/* CARD WHAT IS SILLICON VALLEY? */
+#silliconValley {}
+
+.card-filme .legenda-titulo {}
+
+.card-filme .legenda-titulo .legenda {}
+
+.card-filme .legenda-titulo h2 {}
+
+/* CARD KILL */
+#kill {}
+
+/* CARD ENLIGHTENED */
+#enlightened {}
+
+/* CARD TEEN CHOICE AWARDS */
+#choiceAwards {}
+
+/* SEÇÃO RECOMENDADO */
+.secao-recomendado {}
+
+.secao-recomendado h2 {}
+
+/* LISTA DE FILMES */
+.lista-filmes {}
+
+.lista-filmes .filme {}
+
+/* COMO TREINAR O SEU DRAGÃO 2 */
+#how-to-train-your-dragon-2 {}
+
+.lista-filmes .filme .background-img {}
+
+.lista-filmes .filme .descricao {}
+
+.lista-filmes .filme .descricao h3 {}
+
+.lista-filmes .filme .descricao p {}
+
+.lista-filmes .filme .descricao .nota {}
+
+/* HER */
+#her {}
+
+/* XMEN */
+#xMan {}
+
+/* MILLION WAYS */
+#millionWays {}
+
+/* RODAPÉ */
+.rodape {}
+
+.rodape p {}
+
+.rodape p a {}
