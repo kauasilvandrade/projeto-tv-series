@@ -432,6 +432,8 @@ body {
 #inglouriousBasterds {
     background-image: url(../img/card-inglourious.jpg);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 #inglouriousBasterds .titulo-creditos:hover {
@@ -516,6 +518,8 @@ body {
 /* CARD Toy Story 3 */
 #toyStory {
     background-image: url(../img/card-tory-story.jpg);
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 #toyStory .titulo-creditos:hover {
@@ -528,6 +532,8 @@ body {
     background-image: url(../img/card-spider-man.jpg);
     background-position: 50% -125px;
     background-size: 1000px;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 #spiderMan .titulo-creditos:hover {
@@ -539,6 +545,7 @@ body {
 #scootPilgrim {
     background-image: url(../img/card-scott-pilgrim.jpg);
     grid-column: 1/3;
+    grid-row: 2/3;
     height: 420px;
 }
 
@@ -560,6 +567,7 @@ body {
 #scatlettJohansson {
     background-image: url(../img/card-scarl.jpg);
     grid-column: 3/4;
+    grid-row: 2/4;
     background-size: 700px;
 }
 
@@ -602,19 +610,57 @@ body {
 /* CARD House of Cards */
 #houseCards {
     background-image: url(../img/card-already.jpg);
+    grid-column: 1/2;
+    grid-row: 3/5;
 }
 
-.card-noticia .legenda-titulo .tempo-site {}
+#houseCards .legenda-titulo h2 {
+    font-size: 2em;
+}
+
+.card-noticia .legenda-titulo .tempo-site {
+    font-family: var(--sans-pro);
+    font-size: 0.87em;
+    color: var(--cor3);
+}
+
+.card-noticia .legenda-titulo .tempo-site a {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.card-noticia .legenda-titulo .tempo-site a:hover {
+    text-decoration: underline;
+}
 
 /* BOX OLIVIA */
-#olivia {}
+#olivia {
+    background-image: url(../img/box-olivia.webp);
+}
 
-.box-ator {}
+.box-ator {
+    height: 330px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
 
 /* NOTÍCIAS DE CELEBRIDADES */
-.celebrity-news {}
+.celebrity-news {
+    background-color: #ededed;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    height: 330px;
+}
 
-.celebrity-news h3 {}
+.celebrity-news h3 {
+    font-family: var(--sans-pro);
+    font-weight: 600;
+    background-color: var(--cor8);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
 
 .celebrity-news h2 {}
 
@@ -712,11 +758,13 @@ body {
 
 .citacao-twitter h2 {}
 
-.show-twitter .img-name-instagram {}
+.citacao-twitter .img-name-instagram {}
 
-.show-twitter .img-name-instagram img {}
+.citacao-twitter .img-name-instagram img {
+    width: 10px;
+}
 
-.show-twitter .img-name-instagram .name-inst {}
+.citacao-twitter .img-name-instagram .name-inst {}
 
 /* CARD VINGADORES */
 #vingadores {
