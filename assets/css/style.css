@@ -18,15 +18,29 @@
 
     --sans-pro: 'Source Sans Pro', sans-serif;
     --montserrat: 'Montserrat', sans-serif;
-    --promoximanovacond: 'Proximanovacond';
+    --promoximanovacond: 'Proximanova';
 }
 
 /* FONTE */
 @font-face {
-    font-family: 'Proximanovacond';
+    font-family: 'Proximanova';
+    src: url('https://daks2k3a4ib2z.cloudfront.net/53921298a470cf0443ac7d21/53a20ec764a4f9aa1001e105_ProximaNova-Semibold.otf') format('opentype');
+    font-weight: 800;
     font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Proximanova';
+    src: url('https://daks2k3a4ib2z.cloudfront.net/53921298a470cf0443ac7d21/53a20ec764a4f9aa1001e105_ProximaNova-Semibold.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Proximanova';
+    src: url('https://daks2k3a4ib2z.cloudfront.net/53921298a470cf0443ac7d21/53a26ffc64a4f9aa1001e60f_ProximaNovaCond-Regular.otf') format('opentype');
     font-weight: 400;
-    src: url('../fonts/Mark\ Simonson\ \ Proxima\ Nova\ Condensed\ Thin\ TheFontsMaster.com.woff') format('woff');
+    font-style: normal;
 }
 
 * {
@@ -46,8 +60,9 @@ body {
 .sidebar {
     background-color: var(--cor1);
     position: fixed;
-    width: 93px;
+    width: 5.81rem;
     height: 100vh;
+    z-index: 1;
 }
 
 /* LOGO */
@@ -89,7 +104,7 @@ body {
 
 .lista-links .item a img {
     display: block;
-    width: 25px;
+    width: 1.56rem;
     margin: auto auto 0.5rem auto;
 }
 
@@ -117,7 +132,7 @@ body {
     margin: auto;
     padding-left: 3.4rem;
     padding-right: 2rem;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .5), transparent);
+    background-image: linear-gradient(to top, #000, rgba(0, 0, 0, .6) 53%, transparent);
 }
 
 /* CABEÇALHO */
@@ -211,7 +226,7 @@ body {
 
 .creditos-elenco > .atencao-pais {
     text-align: center;
-    margin-right: 1rem;
+    margin-right: 0.7rem;
     border: 1px solid var(--cor3);
     font-weight: 600;
     border-radius: 2px;
@@ -239,6 +254,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     padding-right: 4rem;
+    margin-bottom: 4rem;
 }
 
 .cabecalho #verMais i {
@@ -247,42 +263,163 @@ body {
 }
 
 /* DESCRIÇÃO DO FILME/SÉRIE */
-.descricao-filme {
-    display: none;
-}
+.descricao-filme {}
 
 /* DESCRICÃO */
-.descricao {}
+.descricao {
+    display: flex;
+    gap: 5rem;
+    padding-bottom: 8.64rem;
+}
 
-.descricao .resumo-categoria {}
+.descricao .resumo-categoria {
+    gap: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 7.5rem 23.87rem;
+}
 
-.descricao .resumo-categoria img {}
+.descricao .resumo-categoria img {
+    display: block;
+    width: 120px;
+    border-radius: 5px;
+    grid-column: 1;
+    grid-row: 1/3;
+}
 
-.descricao .resumo-categoria p {}
+.descricao .resumo-categoria p {
+    grid-column: 2;
+    grid-row: 1/2;
+    color: var(--cor4);
+    font-family: var(--sans-pro);
+    font-weight: 600;
+    line-height: 1.43rem;
+}
 
-.descricao .resumo-categoria .categoria {}
+.descricao .resumo-categoria .box-categorias {}
 
-.avaliacao-filme {}
+.descricao .resumo-categoria .categoria {
+    font-family: var(--sans-pro);
+    text-align: center;
+    border: 1px solid var(--cor3);
+    font-weight: 600;
+    border-radius: 2px;
+    font-size: 0.7em;
+    width: 72px;
+    height: 26px;
+    padding-top: 0.3rem;
+    color: var(--cor4);
+    display: inline-block;
+    text-transform: uppercase;
+}
 
-.avaliacao-filme .nota {}
+.avaliacao-filme {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 
-.avaliacao-filme .nota span {}
+.avaliacao-filme .nota {
+    background-color: transparent;
+    border: 7px solid white;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    padding-top: 2.4rem;
+    border-right-color: #33333383;
+}
 
-.critica .lista-critica {}
+.avaliacao-filme .nota span {
+    color: var(--cor1);
+    font-size: 5em;
+    font-family: var(--promoximanovacond);
+    font-weight: 200;
+    letter-spacing: -7px;
+}
 
-.critica .lista-critica .item {}
+.critica .lista-critica {
+    list-style: none;
+}
 
-.critica .lista-critica .item .nome-linha {}
+.critica .lista-critica .item {
+    color: var(--cor3);
+    font-family: var(--sans-pro);
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
 
-.critica .lista-critica .item .underline {}
+.critica .lista-critica .item .nome-line {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9em;
+}
+
+.critica .lista-critica .item .underline {
+    background-color: var(--cor6);
+    width: 13rem;
+    border-radius: 3px;
+    height: 7px;
+}
+
+.critica .lista-critica .item .underline::after {
+    content: '';
+    display: block;
+    width: 45%;
+    height: 7px;
+    background-image: linear-gradient(to right, var(--cor7), var(--cor8));
+    border-radius: 3px;
+} 
+
+.critica .lista-critica .item .underline-66::after {    
+    content: '';
+    display: block;
+    width: 66%;
+    height: 7px;
+    background-image: linear-gradient(to right, var(--cor7), var(--cor8));
+    border-radius: 3px;
+} 
 
 /* NAVEGAÇÃO DE DADOS SOBRE O FILME */
-.navegacao-dados-filme {}
+.navegacao-dados-filme {
+    margin-bottom: 1rem;
+}
 
-.navegacao-dados-filme .lista-navegacao {}
+.navegacao-dados-filme .lista-navegacao {
+    position: absolute;
+    left: 5.7rem;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    background-color: #1918178f;
+    width: 93%;
+    top: 41.3rem;
+}
 
-.navegacao-dados-filme .lista-navegacao .item {}
+.navegacao-dados-filme .lista-navegacao .item {
+    width: 25%;
+}
 
-.navegacao-dados-filme .lista-navegacao .item a {}
+.navegacao-dados-filme .lista-navegacao .item a {
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    font-size: 1.12em;
+    color: #8f8f8f;
+    font-family: var(--sans-pro);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    border-left: 1px solid black;
+}
 
-.navegacao-dados-filme .lista-navegacao .item a#fundo-amarelo {}
+.navegacao-dados-filme .lista-navegacao .item a:hover {
+    box-shadow: inset 0px 3px 0px var(--cor8);
+}
+
+.navegacao-dados-filme .lista-navegacao .item a#fundo-amarelo {
+    background-color: var(--cor8);
+    color: var(--cor2);
+    transition: all 0.15s ease-in 0s;
+}
