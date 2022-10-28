@@ -434,6 +434,11 @@ body {
     position: relative;
 }
 
+#inglouriousBasterds .titulo-creditos:hover {
+    box-shadow: inset 0px -4px 0px var(--cor10);
+    transition: .3s;
+}
+
 .card-filme {
     background-position: 50% 50%;
     background-size: cover;
@@ -513,9 +518,21 @@ body {
     background-image: url(../img/card-tory-story.jpg);
 }
 
+#toyStory .titulo-creditos:hover {
+    box-shadow: inset 0px -4px 0px var(--cor11);
+    transition: .3s;
+}
+
 /* CARD The Amazing Spiderman */
 #spiderMan {
     background-image: url(../img/card-spider-man.jpg);
+    background-position: 50% -125px;
+    background-size: 1000px;
+}
+
+#spiderMan .titulo-creditos:hover {
+    box-shadow: inset 0px -4px 0px var(--cor13);
+    transition: .3s;
 }
 
 /* CARD Scott Pilgrim vs. the World */
@@ -526,27 +543,61 @@ body {
 }
 
 #scootPilgrim .titulo-creditos .legenda {
-    color: #f2be5c;
+    color: var(--cor9);
     font-weight: 600;
+}
+
+#scootPilgrim .titulo-creditos h2 {
+    font-size: 3.12em;
+}
+
+#scootPilgrim .titulo-creditos:hover {
+    box-shadow: inset 0px -4px 0px var(--cor8);
+    transition: .3s;
 }
 
 /* CARD Scarlett Johansson */
 #scatlettJohansson {
     background-image: url(../img/card-scarl.jpg);
     grid-column: 3/4;
+    background-size: 700px;
+}
+
+#scatlettJohansson .legenda-titulo:hover {
+    box-shadow: inset 0px -4px 0px var(--cor8);
+    transition: .3s;
 }
 
 .card-noticia {
     background-position: 50% 50%;
     background-size: cover;
     height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.card-noticia .legenda-titulo {}
+.card-noticia .legenda-titulo {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .8));
+    padding-left: 3.1rem;
+    padding-bottom: 2rem;
+}
 
-.card-noticia .legenda-titulo .span {}
+.card-noticia .legenda-titulo .legenda {
+    color: var(--cor9);
+    font-weight: 600;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
 
-.card-noticia .legenda-titulo h2 {}
+.card-noticia .legenda-titulo h2 {
+    font-family: var(--sans-pro);
+    font-weight: 300;
+    color: var(--cor1);
+    font-size: 3.12em;
+    margin-bottom: 0.4rem;
+}
 
 /* CARD House of Cards */
 #houseCards {
