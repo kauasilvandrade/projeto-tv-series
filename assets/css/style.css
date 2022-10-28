@@ -39,9 +39,10 @@
 body {
     height: 100vh;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ASIDE */
+/* SIDEBAR */
 .sidebar {
     background-color: var(--cor1);
     position: fixed;
@@ -49,6 +50,7 @@ body {
     height: 100vh;
 }
 
+/* LOGO */
 .sidebar .logo {
     background-color: #ffb10a;
     padding: 1.7rem 0.9rem 1.5rem 0.9rem;
@@ -58,6 +60,7 @@ body {
     width: 100%;
 }
 
+/* LISTA DE LINKS */
 .lista-links {
     list-style: none;
 }
@@ -108,3 +111,178 @@ body {
 .container {
     margin-left: 5.8rem;
 }
+
+.container-2 {
+    max-width: 1255px;
+    margin: auto;
+    padding-left: 3.4rem;
+    padding-right: 2rem;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .5), transparent);
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 0.8rem;
+    background-position: center;
+}
+
+/* ÁREA PESQUISA */
+.cabecalho .botao-pesquisa {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+}
+
+.cabecalho .botao-pesquisa a {
+    text-decoration: none;
+    width: 100px;
+    color: var(--cor1);
+    font-family: var(--sans-pro);
+    border: 1px solid var(--cor3);
+    padding-block: 0.6rem;
+    padding-inline: 0.8rem 1rem;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 400;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.cabecalho .botao-pesquisa a:hover {
+    background-color: var(--cor2);
+    transition: .5s;
+}
+
+.cabecalho .botao-pesquisa a img {
+    width: 13px;
+}
+
+
+.cabecalho .legenda {
+    display: block;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    color: var(--cor4);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.cabecalho h1 {
+    font-family: var(--sans-pro);
+    color: white;
+    font-weight: 600;
+    font-size: 5em;
+    line-height: 1;
+    margin-bottom: 1rem;
+    letter-spacing: -3px;
+}
+
+/* CRÉDITOS E ELENCO */
+.creditos-elenco {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    color: var(--cor4);
+    font-family: var(--promoximanovacond);
+    font-weight: 600;
+}
+
+.creditos-elenco > .nota {
+    text-align: center;
+    display: block;
+    background-color: #3ec24b;
+    color: white;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    font-family: var(--promoximanovacond);
+    font-weight: 700;
+    font-size: 0.68em;
+    padding-top: 0.3rem;
+}
+
+.creditos-elenco > .atencao-pais {
+    text-align: center;
+    margin-right: 1rem;
+    border: 1px solid var(--cor3);
+    font-weight: 600;
+    border-radius: 2px;
+    font-size: 0.7em;
+    width: 26px;
+    height: 22px;
+    padding-top: 0.22rem;
+    color: var(--cor4);
+}
+
+.creditos-elenco p {}
+
+/* BOTÃO VER MAIS */
+.cabecalho #verMais {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid var(--cor3);
+    color: var(--cor4);
+    text-transform: uppercase;
+    padding: 1.2rem;
+    font-size: 0.75em;
+    font-family: var(--sans-pro);
+    font-weight: 600;
+    cursor: pointer;
+    padding-right: 4rem;
+}
+
+.cabecalho #verMais i {
+    margin-left: 0.3rem;
+    font-size: 0.7em;
+}
+
+/* DESCRIÇÃO DO FILME/SÉRIE */
+.descricao-filme {
+    display: none;
+}
+
+/* DESCRICÃO */
+.descricao {}
+
+.descricao .resumo-categoria {}
+
+.descricao .resumo-categoria img {}
+
+.descricao .resumo-categoria p {}
+
+.descricao .resumo-categoria .categoria {}
+
+.avaliacao-filme {}
+
+.avaliacao-filme .nota {}
+
+.avaliacao-filme .nota span {}
+
+.critica .lista-critica {}
+
+.critica .lista-critica .item {}
+
+.critica .lista-critica .item .nome-linha {}
+
+.critica .lista-critica .item .underline {}
+
+/* NAVEGAÇÃO DE DADOS SOBRE O FILME */
+.navegacao-dados-filme {}
+
+.navegacao-dados-filme .lista-navegacao {}
+
+.navegacao-dados-filme .lista-navegacao .item {}
+
+.navegacao-dados-filme .lista-navegacao .item a {}
+
+.navegacao-dados-filme .lista-navegacao .item a#fundo-amarelo {}
