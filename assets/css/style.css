@@ -647,24 +647,54 @@ body {
 
 /* NOTÍCIAS DE CELEBRIDADES */
 .celebrity-news {
+    display: flex;
     background-color: #ededed;
-    grid-column: 2/3;
-    grid-row: 4/5;
     height: 330px;
+    border-top: 4px solid var(--cor8);
+    position: relative;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+#oliviaNews {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#rihannaNews {}
+
 .celebrity-news h3 {
+    left: 7rem;
     font-family: var(--sans-pro);
     font-weight: 600;
     background-color: var(--cor8);
     color: white;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.9em;
+    padding: 0.5rem;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 0;
 }
 
-.celebrity-news h2 {}
+.celebrity-news h2 {
+    font-family: var(--sans-pro);
+    font-weight: 300;
+    font-size: 2.25em;
+    color: #737373;
+    margin-bottom: 0.4rem;
+}
 
-.celebrity-news .tempo-publicacao {}
+.celebrity-news .tempo-publicacao {
+    font-size: 0.87em;
+    color: var(--cor5);
+    font-weight: 400;
+    font-family: var(--sans-pro);
+}
 
 /* RANK DE PESSOAS */
 .aside-rank-pessoas {}
@@ -684,7 +714,9 @@ body {
 .lista-rank .pessoa .classificacao {}
 
 /* BOX RIHANNA */
-#rihanna {}
+#rihanna {
+    background-image: url(../img/box-rihanna.webp);
+}
 
 /* CARD QUENTIN TARANTINO */
 #quentinTarantino {
