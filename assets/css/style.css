@@ -258,7 +258,6 @@ body {
     font-weight: 600;
     cursor: pointer;
     padding-right: 4rem;
-    margin-bottom: 4rem;
 }
 
 .cabecalho #verMais i {
@@ -267,7 +266,10 @@ body {
 }
 
 /* DESCRIÇÃO DO FILME/SÉRIE */
-.descricao-filme {}
+.descricao-filme {
+    display: none;
+    padding-top: 4rem;
+}
 
 /* DESCRICÃO */
 .descricao {
@@ -429,15 +431,47 @@ body {
 /* CONTEÚDO */
 .conteudo {
     display: grid;
-    grid-template-columns: repeat(3, minmax(418px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
 }
+
+/* BASE GRID DO CONTEUDO */
+.conteudo {
+    grid-template-areas: 
+
+    "inglourious toyStory spiderMan" 
+
+    "scootPilgrim scootPilgrim scarlett" 
+
+    "houseCards olivia scarlett"
+
+    "houseCards oliviaNews rank" 
+
+    "rihanna quentinTarantino rank" 
+
+    "rihannaNews quentinTarantino rank" 
+
+    "jerseyBoys showTwitter littleMiss" 
+
+    "jerseyBoys leonardoDicaprio longasMetragens" 
+
+    "jerseyBoys leonardoDicaprio vingadores" 
+
+    "batman citacaoTwitter vingadores" 
+
+    "silicon silicon kill" 
+
+    "enlightened-choice-awards enlightened-choice-awards enlightened-choice-awards" 
+
+    "recommended recommended recommended" 
+    
+    ;
+} 
 
 /* CARD Inglourious Basterds */
 #inglouriousBasterds {
     background-image: url(../img/card-inglourious.jpg);
     position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-area: inglourious;
 }
 
 #inglouriousBasterds .titulo-creditos:hover {
@@ -468,7 +502,7 @@ body {
     background-size: 25px;
     position: absolute;
     top: 14rem;
-    right: 11rem;
+    right: 40%;
 }
 
 .card-filme a:hover {
@@ -522,8 +556,7 @@ body {
 /* CARD Toy Story 3 */
 #toyStory {
     background-image: url(../img/card-tory-story.jpg);
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-area: toyStory;
 }
 
 #toyStory .titulo-creditos:hover {
@@ -536,8 +569,7 @@ body {
     background-image: url(../img/card-spider-man.jpg);
     background-position: 50% -125px;
     background-size: 1000px;
-    grid-column: 3/4;
-    grid-row: 1/2;
+    grid-area: spiderMan;
 }
 
 #spiderMan .titulo-creditos:hover {
@@ -548,9 +580,8 @@ body {
 /* CARD Scott Pilgrim vs. the World */
 #scootPilgrim {
     background-image: url(../img/card-scott-pilgrim.jpg);
-    grid-column: 1/3;
-    grid-row: 2/3;
     height: 420px;
+    grid-area: scootPilgrim;
 }
 
 #scootPilgrim .titulo-creditos .legenda {
@@ -570,10 +601,9 @@ body {
 /* CARD Scarlett Johansson */
 #scatlettJohansson {
     background-image: url(../img/card-scarl.jpg);
-    grid-column: 3/4;
-    grid-row: 2/4;
     background-size: 700px;
     height: 795px;
+    grid-area: scarlett;
 }
 
 #scatlettJohansson .legenda-titulo:hover {
@@ -615,8 +645,7 @@ body {
 /* CARD House of Cards */
 #houseCards {
     background-image: url(../img/card-already.jpg);
-    grid-column: 1/2;
-    grid-row: 3/5;
+    grid-area: houseCards;
 }
 
 #houseCards .legenda-titulo h2 {
@@ -641,8 +670,7 @@ body {
 /* BOX OLIVIA */
 #olivia {
     background-image: url(../img/box-olivia.webp);
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-area: olivia;
 }
 
 .box-ator {
@@ -667,17 +695,14 @@ body {
 }
 
 #oliviaNews {
-    grid-column: 2/3;
-    grid-row: 4/5;
+    grid-area: oliviaNews;
 }
 
 #rihannaNews {
-    grid-row: 6/7;
-    grid-column: 1;
+    grid-area: rihannaNews;
 }
 
 .celebrity-news h3 {
-    left: 7rem;
     font-family: var(--sans-pro);
     font-weight: 600;
     background-color: var(--cor8);
@@ -708,12 +733,11 @@ body {
 
 /* RANK DE PESSOAS */
 .aside-rank-pessoas {
-    grid-column: 3;
-    grid-row: 4/7;
     padding-left: 3.1rem;
     padding-top: 4rem;
     padding-right: 2.8rem;
     background-color: #f7f7f7;
+    grid-area: rank;
 }
 
 .aside-rank-pessoas p {
@@ -808,15 +832,13 @@ body {
 /* BOX RIHANNA */
 #rihanna {
     background-image: url(../img/box-rihanna.webp);
-    grid-column: 1/2;
-    grid-row: 5/6;
+    grid-area: rihanna;
 }
 
 /* CARD QUENTIN TARANTINO */
 #quentinTarantino {
     background-image: url(../img/card-quentin.png);
-    grid-column: 2/3;
-    grid-row: 5/7;
+    grid-area: quentinTarantino;
 }
 
 #quentinTarantino .legenda-titulo {
@@ -836,8 +858,7 @@ body {
 #jerseyBoys {
     background-image: url(../img/card-jersey.jpg);
     background-size: unset;
-    grid-column: 1/2;
-    grid-row: 7/10;
+    grid-area: jerseyBoys;
 }
 
 .card-noticia .titulo {
@@ -869,8 +890,7 @@ body {
     background-repeat: no-repeat;
     padding: 2rem;
     height: 300px;
-    grid-row: 7/8;
-    grid-column: 2/3;
+    grid-area: showTwitter;
 }
 
 .show-twitter > img {
@@ -911,8 +931,6 @@ body {
 .card-video {
     background-image: url(../img/card-little-miss.jpg);
     height: 300px;
-    grid-row: 7/8;
-    grid-column: 3/4;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -920,6 +938,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
+    grid-area: littleMiss;
 }
 
 .card-video a {
@@ -935,7 +954,7 @@ body {
     background-size: 25px;
     position: absolute;
     bottom: 7rem;
-    right: 11rem;
+    right: 40%;
 }
 
 .card-video a:hover {
@@ -978,8 +997,7 @@ body {
 #leonardoDiCaprio {
     background-image: url(../img/card-leonard.jpg);
     height: 450px;
-    grid-column: 2/3;
-    grid-row: 8/10;
+    grid-area: leonardoDicaprio;
 }
 
 #leonardoDiCaprio .legenda-titulo:hover {
@@ -1005,8 +1023,7 @@ body {
     padding-left: 3.1rem;
     padding-bottom: 2rem;
     padding-right: 1rem;
-    grid-column: 3/4;
-    grid-row: 8/9;
+    grid-area: longasMetragens;
 }
 
 .longas-metragens h2 {
@@ -1029,8 +1046,7 @@ body {
     background-image: url(../img/card-batman.jpg);
     height: 500px;
     background-position: 0% 50%;
-    grid-column: 1/2;
-    grid-row: 10/11;
+    grid-area: batman;
 }
 
 #nolanBatman .titulo {
@@ -1047,8 +1063,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    grid-row: 10/11;
-    grid-column: 2/3;
+    grid-area: citacaoTwitter;
 }
 
 .citacao-twitter .aspas {
@@ -1088,19 +1103,17 @@ body {
 /* CARD VINGADORES */
 #vingadores {
     background-image: url(../img/card-vingadores.jpg);
-    grid-column: 3/4;
-    grid-row: 9/11;
     height: 650px;
+    grid-area: vingadores;
 }
 
 /* CARD WHAT IS SILLICON VALLEY? */
 #silliconValley {
     background-image: url(../img/card-silicon.jpg);
     height: 500px;
-    grid-column: 1/3;
-    grid-row: 11/12;
     background-position: 66% 0%;
     background-size: 950px;
+    grid-area: silicon;
 }
 
 .card-filme .legenda-titulo {
@@ -1135,18 +1148,17 @@ body {
 #kill {
     background-image: url(../img/card-kill.jpg);
     height: 500px;
-    grid-column: 3/4;
-    grid-row: 11/12;
     background-position: 40% 0%;
     background-repeat: no-repeat;
     background-size: 590px;
+    grid-area: kill;
 }
 
 /* BOX COM ENLIGHTENED E TEEN CHOICE AWARDS */
 .enlightened-choice-awards {
-    grid-column: 1/-1;
+    grid-area: enlightened-choice-awards;
     display: grid;
-    grid-template-columns: repeat(4, 314px);
+    grid-template-columns: repeat(4, 25%);
 }
 
 /* CARD ENLIGHTENED */
@@ -1236,6 +1248,12 @@ body {
     height: 450px;
     background-repeat: no-repeat;
     background-position: center;
+    transition: .5s;
+}
+
+.lista-filmes .filme .background-img:hover {
+    box-shadow: 0px -5px 0px 0px var(--cor8);
+    opacity: 0.75;
 }
 
 .lista-filmes .filme .descricao {
