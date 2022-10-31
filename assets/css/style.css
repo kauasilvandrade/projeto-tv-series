@@ -11,7 +11,7 @@
     --cor7: #ff9317;
     --cor8: #ffc917;
     --cor9: #f2be5c;
-    --cor10: #44dbd6;
+    --cor10: #00fcf3;
     --cor11: #cc78f080;
     --cor12: #60db44;
     --cor13: #95db4f80;
@@ -44,6 +44,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
 * {
     padding: 0;
@@ -833,109 +835,355 @@ body {
 /* CARD JERSEY BOYS */
 #jerseyBoys {
     background-image: url(../img/card-jersey.jpg);
+    background-size: unset;
+    grid-column: 1/2;
+    grid-row: 7/10;
 }
 
-.card-noticia .titulo {}
+.card-noticia .titulo {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .8));
+    padding-left: 3.1rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+}
 
-.card-noticia .titulo h2 {}
+.card-noticia .titulo h2 {
+    font-family: var(--sans-pro);
+    font-weight: 300;
+    color: var(--cor1);
+    font-size: 2em;
+    margin-bottom: 0.4rem;
+}
 
-.card-noticia .titulo .tempo-publicacao {}
+.card-noticia .titulo .tempo-publicacao {
+    font-family: var(--sans-pro);
+    font-size: 0.87em;
+    color: var(--cor3);
+}
 
 /* SHOW TWITTER  */
-.show-twitter {}
-
-.show-twitter img {}
-
-.show-twitter p {}
-
-.show-twitter .img-name-instagram {}
-
-.show-twitter .img-name-instagram img {
-    width: 10px;
+.show-twitter {
+    background-image: url(../img/card-ben.webp);
+    background-size: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    height: 300px;
+    grid-row: 7/8;
+    grid-column: 2/3;
 }
 
-.show-twitter .img-name-instagram .name-inst {}
+.show-twitter > img {
+    width: 35px;
+}
+
+.show-twitter p {
+    font-size: 1.12em;
+    color: var(--cor9);
+    font-family: var(--sans-pro);
+    line-height: 1.4em;
+    margin-bottom: 1.2rem;
+}
+
+.show-twitter .img-name-instagram {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.show-twitter .img-name-instagram > img {
+    border-radius: 50%;
+    width: 25px;
+}
+
+.show-twitter .img-name-instagram > img:hover {
+    border: 2px solid var(--cor8);
+    opacity: 0.88;
+}
+
+.show-twitter .img-name-instagram .name-inst {
+    font-size: 1em;
+    color: #f2be5c;
+    font-family: var(--sans-pro);
+}
 
 /* VIDEO MISS SUSHINE */
-.card-video {}
+.card-video {
+    background-image: url(../img/card-little-miss.jpg);
+    height: 300px;
+    grid-row: 7/8;
+    grid-column: 3/4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
 
-.card-video a {}
+.card-video a {
+    display: block;
+    border: 2px solid white;
+    text-decoration: none;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url(../img/icone-play-video.png);
+    background-repeat: no-repeat;
+    background-position: 54% 50%;
+    background-size: 25px;
+    position: absolute;
+    bottom: 7rem;
+    right: 11rem;
+}
 
-.card-video a img {}
+.card-video a:hover {
+    transition: .5s;
+    background-color: #fdc200b6;
+    background-image: url(../img/icone-play-video-white.png);
+    background-repeat: no-repeat;
+    background-position: 54% 50%;
+    background-size: 25px;
+}
 
-.card-video .legenda-titulo  {}
+.card-video .legenda-titulo  {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .8));
+    padding-left: 3.1rem;
+    padding-bottom: 2rem;
+}
 
-.card-video .legenda-titulo .legenda {}
+.card-video .legenda-titulo:hover {
+    box-shadow: inset 0px -4px 0px var(--cor8);
+    transition: .3s;
+}
 
-.card-video .legenda-titulo h2 {}
+.card-video .legenda-titulo .legenda {
+    color: var(--cor9);
+    font-weight: 600;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.card-video .legenda-titulo h2 {
+    font-family: var(--sans-pro);
+    font-weight: 300;
+    color: var(--cor1);
+    font-size: 2em;
+    margin-bottom: 0.4rem;
+}
 
 /* CARD LEONARDO DICAPRIO */
 #leonardoDiCaprio {
     background-image: url(../img/card-leonard.jpg);
+    height: 450px;
+    grid-column: 2/3;
+    grid-row: 8/10;
 }
 
-.card-noticia .legenda-titulo .tempo-publicacao {}
+#leonardoDiCaprio .legenda-titulo:hover {
+    box-shadow: inset 0px -4px 0px var(--cor8);
+    transition: .3s;
+}
+
+#leonardoDiCaprio .legenda-titulo h2 {
+    font-size: 2em;
+}
 
 /* LONGAS METRAGENS DE ROMANCE */
-.longas-metragens {}
+.longas-metragens {
+    height: 300px;
+    background-image: url(../img/card-films.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 3.1rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
 
-.longas-metragens h2 {}
+.longas-metragens h2 {
+    font-size: 2em;
+    color: white;
+    font-family: var(--sans-pro);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
 
-.longas-metragens .tempo-publicacao {}
+.longas-metragens .tempo-publicacao {
+    font-family: var(--sans-pro);
+    font-weight: 400;
+    font-size: 0.89em;
+    color: var(--cor10);
+}
 
 /* CARD NOLAN BATMAN */
 #nolanBatman {
     background-image: url(../img/card-batman.jpg);
+    height: 500px;
+    background-position: 0% 50%;
+    grid-column: 1/2;
+    grid-row: 10/11;
+}
+
+#nolanBatman .titulo {
+    padding-bottom: 4rem;
 }
 
 /* CITAÇÃO TWITTER */
-.citacao-twitter {}
-
-.citacao-twitter .aspas {}
-
-.citacao-twitter h2 {}
-
-.citacao-twitter .img-name-instagram {}
-
-.citacao-twitter .img-name-instagram img {
-    width: 10px;
+.citacao-twitter {
+    height: 500px;
+    display: flex;
+    background-color: rgb(254 254 254);
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-row: 10/11;
+    grid-column: 2/3;
 }
 
-.citacao-twitter .img-name-instagram .name-inst {}
+.citacao-twitter .aspas {
+    font-family: 'Ultra', serif;
+    font-size: 7em;
+    height: 80px;
+    color: #dbdbdb;
+    font-weight: 900;
+}
+
+.citacao-twitter h2 {
+    font-family: var(--sans-pro);
+    font-weight: 300;
+    font-size: 2.45em;
+    color: #737373;
+    margin-bottom: 1rem;
+}
+
+.citacao-twitter .img-name-instagram {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.citacao-twitter .img-name-instagram img {
+    border-radius: 50%;
+    width: 25px;
+}
+
+.citacao-twitter .img-name-instagram .name-inst {
+    font-size: 1em;
+    color: #f2be5c;
+    font-family: var(--sans-pro);
+}
 
 /* CARD VINGADORES */
 #vingadores {
     background-image: url(../img/card-vingadores.jpg);
+    grid-column: 3/4;
+    grid-row: 9/11;
+    height: 650px;
 }
 
 /* CARD WHAT IS SILLICON VALLEY? */
 #silliconValley {
     background-image: url(../img/card-silicon.jpg);
+    height: 500px;
+    grid-column: 1/3;
+    grid-row: 11/12;
+    background-position: 66% 0%;
+    background-size: 950px;
 }
 
-.card-filme .legenda-titulo {}
+.card-filme .legenda-titulo {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .8));
+    padding-left: 3.1rem;
+    padding-bottom: 5rem;
+    padding-right: 13rem;
+}
 
-.card-filme .legenda-titulo .legenda {}
+.card-filme .legenda-titulo:hover {
+    box-shadow: inset 0px -4px 0px var(--cor8);
+    transition: .3s;
+}
 
-.card-filme .legenda-titulo h2 {}
+.card-filme .legenda-titulo .legenda {
+    color: var(--cor9);
+    font-weight: 600;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.card-filme .legenda-titulo h2 {
+    font-family: var(--sans-pro);
+    font-weight: 300;
+    color: var(--cor1);
+    font-size: 4.12em;
+    margin-bottom: 0.4rem;
+}
 
 /* CARD KILL */
 #kill {
     background-image: url(../img/card-kill.jpg);
+    height: 500px;
+    grid-column: 3/4;
+    grid-row: 11/12;
+    background-position: 40% 0%;
+    background-repeat: no-repeat;
+    background-size: 590px;
+}
+
+/* BOX COM ENLIGHTENED E TEEN CHOICE AWARDS */
+.enlightened-choice-awards {
+    grid-column: 1/-1;
+    display: grid;
 }
 
 /* CARD ENLIGHTENED */
 #enlightened {
     background-image: url(../img/card-enlightened.jpg);
+    height: 400px;
+    grid-column: 1/3;
+}
+
+#enlightened .legenda-titulo h2 {
+    font-size: 2em;
+}
+
+#enlightened .legenda-titulo:hover {
+    box-shadow: inset 0px -4px 0px var(--cor8);
+    transition: .3s;
 }
 
 /* CARD TEEN CHOICE AWARDS */
 #choiceAwards {
     background-image: url(../img/card-gravity.jpg);
+    height: 400px;
+    grid-column: 3/5;
+}
+
+#choiceAwards .legenda-titulo h2 {
+    font-size: 2em;
+}
+
+#choiceAwards .legenda-titulo:hover {
+    box-shadow: inset 0px -4px 0px var(--cor8);
+    transition: .3s;
 }
 
 /* SEÇÃO RECOMENDADO */
-.secao-recomendado {}
+.secao-recomendado {
+    grid-column: 1/4;
+}
 
 .secao-recomendado h2 {}
 
