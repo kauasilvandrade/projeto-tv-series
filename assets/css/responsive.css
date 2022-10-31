@@ -1,40 +1,203 @@
-/* 1070 */
+@charset "UTF-8";
 
-/* .conteudo {
-    grid-template-areas: 
 
-    "inglourious toyStory" 
-
-    "scootPilgrim scootPilgrim "
-
-    "spiderMan spiderMan"
-
-    "houseCards olivia"
-
-    "houseCards oliviaNews" 
-
-    "scarlett rank" 
-
-    "rihanna rank"
-
-    "rihannaNews rank" 
-
-    "quentinTarantino jerseyBoys" 
-
-    "showTwitter littleMiss" 
-
-    "leonardoDicaprio longasMetragens" 
-
-    "leonardoDicaprio vingadores" 
-
-    "citacaoTwitter vingadores" 
-
-    "batman kill" 
-
-    "silicon silicon" 
-
-    "enlightened-choice-awards enlightened-choice-awards" 
+@media screen and (max-width: 1070px) {
     
-    ;
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    .conteudo {
+        grid-template-areas: 
+    
+        "inglourious toyStory" 
+    
+        "scootPilgrim scootPilgrim "
+    
+        "spiderMan spiderMan"
+    
+        "houseCards olivia"
+    
+        "houseCards oliviaNews" 
+    
+        "scarlett rank"
+    
+        "rihannaNews rihanna" 
+    
+        "quentinTarantino jerseyBoys" 
+    
+        "showTwitter littleMiss" 
+    
+        "leonardoDicaprio longasMetragens" 
+    
+        "leonardoDicaprio vingadores" 
+    
+        "citacaoTwitter vingadores" 
+    
+        "batman kill" 
+    
+        "silicon silicon" 
+    
+        "enlightened-choice-awards enlightened-choice-awards" 
+        
+        ;
+    } 
+
+    /* CARD SCARLETT */
+    #scatlettJohansson {
+        background-size: 800px;
+        height: 1002px;
+        background-repeat: no-repeat;
+    }
+
+    .card-noticia .legenda-titulo .legenda {
+        color: #7f5c19;
+    }
+    
+
+    /* RANK PESSOAS */
+    .aside-rank-pessoas {
+        padding-top: 2.5rem;
+    }
+
+    .aside-rank-pessoas p::after {
+        content: '';
+        top: 6rem;
+    }
+
+    /* SHOW TWITTER */
+    .show-twitter {
+        background-size: 469px;
+    }
+
+    /* TEEN CHOICE AWARDS */
+    #choiceAwards .legenda-titulo {
+        padding-right: 0rem;
+    }
+
+    /* ÁREA RECOMENDADO */
+    .lista-filmes {
+        gap: 1rem;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-filmes .filme {
+        display: flex;
+        width: 33%;
+        flex-direction: column;
+    }
+
+}  
+
+@media screen and (max-width: 777px) {
+    
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } 
+
+    .conteudo {
+        grid-template-areas: 
+    
+        "inglourious" 
+    
+        "toyStory"
+
+        "scootPilgrim"
+    
+        "spiderMan"
+    
+        "olivia"
+    
+        "houseCards" 
+    
+        "oliviaNews"
+
+        "scarlett"
+
+        "rank"
+    
+        "rihanna" 
+
+        "rihannaNews" 
+    
+        "quentinTarantino" 
+
+        "jerseyBoys" 
+    
+        "littleMiss" 
+
+        "showTwitter" 
+    
+        "longasMetragens" 
+    
+        "leonardoDicaprio"
+
+        "vingadores" 
+    
+        "citacaoTwitter" 
+    
+        "kill" 
+
+        "batman" 
+    
+        "silicon" 
+    
+        "enlightened-choice-awards" 
+        
+        ;
+    } 
+
+    /* RANK PESSOAS  */
+    .aside-rank-pessoas {
+        padding-bottom: 3rem;
+    }    
+
+    .aside-rank-pessoas p::after {
+        content: '';
+        top: 4rem;
+    }
+
+    /* CARD RIHANNA */
+    #rihanna {
+        background-position: 50% 50%;
+        background-size: 656px;
+    }
+
+    /* SHOW TWITTER */
+    .show-twitter {
+        background-size: 675px;
+    }
+
+    /* CARD KILL */
+    #kill {
+        background-size: 690px;
+    }
+
+    /* ENLIGHTENED E TEEN CHOICE AWARDS */
+    .enlightened-choice-awards {
+        grid-template-columns: 1fr;
+    }
+
+    #enlightened {
+        grid-column: 1;
+    }
+
+    #choiceAwards {
+        grid-column: 1;
+    }
+
+    /* LISTA DE FILMES RECOMENDADOS */
+    .lista-filmes .filme {
+        width: 100%;
+    }
+
+    .lista-filmes .filme .background-img:hover {
+        box-shadow: unset;
+    }
+
 } 
- */
