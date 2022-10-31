@@ -1146,6 +1146,7 @@ body {
 .enlightened-choice-awards {
     grid-column: 1/-1;
     display: grid;
+    grid-template-columns: repeat(4, 314px);
 }
 
 /* CARD ENLIGHTENED */
@@ -1153,6 +1154,7 @@ body {
     background-image: url(../img/card-enlightened.jpg);
     height: 400px;
     grid-column: 1/3;
+    background-size: 760px;
 }
 
 #enlightened .legenda-titulo h2 {
@@ -1171,6 +1173,10 @@ body {
     grid-column: 3/5;
 }
 
+#choiceAwards .legenda-titulo {
+    padding-right: 14rem;
+}
+
 #choiceAwards .legenda-titulo h2 {
     font-size: 2em;
 }
@@ -1183,40 +1189,127 @@ body {
 /* SEÇÃO RECOMENDADO */
 .secao-recomendado {
     grid-column: 1/4;
+    padding: 4rem 2rem 0 2rem;
+    position: relative;
 }
 
-.secao-recomendado h2 {}
+.secao-recomendado h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--sans-pro);
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.secao-recomendado h2::before {
+    content: '';
+    display: block;
+    background-color: var(--cor8);
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    left: 37rem;
+    top: 3.5rem;
+}
 
 /* LISTA DE FILMES */
-.lista-filmes {}
+.lista-filmes {
+    list-style: none;
+    display: flex;
+}
 
-.lista-filmes .filme {}
+.lista-filmes .filme {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
 
 /* COMO TREINAR O SEU DRAGÃO 2 */
-#how-to-train-your-dragon-2 {}
+#how-to-train-your-dragon-2 {
+    background-image: url(../img/recomed-dragon.png);
+}
 
-.lista-filmes .filme .background-img {}
+.lista-filmes .filme .background-img {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-.lista-filmes .filme .descricao {}
+.lista-filmes .filme .descricao {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
 
-.lista-filmes .filme .descricao h3 {}
+.lista-filmes .filme .descricao h3 {
+    color: var(--cor9);
+    font-weight: 600;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
 
-.lista-filmes .filme .descricao p {}
+.lista-filmes .filme .descricao p {
+    font-family: var(--sans-pro);
+    font-size: 0.79em;
+    color: #6e6e6e;
+    font-weight: 400;
+}
 
-.lista-filmes .filme .descricao .nota {}
+.lista-filmes .filme .descricao .nota {
+    border: 1px solid #3ec24b;
+    background-color: transparent;
+    color: #3ec24b;
+    font-family: var(--promoximanovacond);
+    font-weight: 400;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    font-size: 0.68em;
+    padding-top: 0.3rem;
+}
 
 /* HER */
-#her {}
+#her {
+    background-image: url(../img/recomed-her.png);
+}
 
 /* XMEN */
-#xMan {}
+#xMan {
+    background-image: url(../img/recomed-x-man.png);
+}
 
 /* MILLION WAYS */
-#millionWays {}
+#millionWays {
+    background-image: url(../img/recomed-mlion.png);
+}
 
 /* RODAPÉ */
-.rodape {}
+.rodape {
+    text-align: center;
+    background-color: var(--cor8);
+    padding: 0.7rem;
+    font-family: var(--sans-pro);
+    font-weight: 600;
+    color: white;
+}
 
 .rodape p {}
 
-.rodape p a {}
+.rodape p a {
+    text-decoration: none;
+    color: #a25600;
+}
+
+.rodape p a:hover {
+    text-decoration: underline;
+}
