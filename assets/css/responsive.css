@@ -127,6 +127,62 @@
         margin-left: 0;
     }
 
+    /* DESCRIÇÃO DO FILME/SÉRIE */
+    .container-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .legenda, h1, .creditos-elenco, .descricao-filme .descricao {
+        padding-left: 1.5rem;
+    }   
+
+    .cabecalho #verMais {
+        padding-right: 0rem;
+    }
+
+    .descricao-filme {
+        padding-top: 1rem;
+        position: relative;
+    }
+
+    .descricao .resumo-categoria {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .descricao .resumo-categoria img {
+        width: 170px;
+    }
+
+    .avaliacao-filme .nota {
+        width: 140px;
+        height: 140px;
+        padding-top: 1.7rem;
+    }
+    
+    .avaliacao-filme .nota span {
+        font-size: 4.5em;
+    }
+
+    .navegacao-dados-filme {
+        position: absolute;
+        top: 88%;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .navegacao-dados-filme .lista-navegacao {
+        position: unset;
+        width: 47rem;
+    }
+
+    .navegacao-dados-filme .lista-navegacao .item a {
+        width: 11.7rem;
+    }
+
+    /* CONTEÚDO */
     .conteudo {
         display: grid;
         grid-template-columns: minmax(300px, 1fr);
@@ -250,3 +306,19 @@
     }
 
 } 
+
+
+@media screen and (max-width: 440px) {
+
+    .avaliacao-filme {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navegacao-dados-filme {
+        position: absolute;
+        top: 90.2%;
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
