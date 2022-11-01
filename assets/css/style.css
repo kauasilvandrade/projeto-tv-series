@@ -268,12 +268,13 @@ body {
 /* DESCRIÇÃO DO FILME/SÉRIE */
 .descricao-filme {
     padding-top: 4rem;
+    display: none;
 }
 
 /* DESCRICÃO */
 .descricao {
     display: flex;
-    gap: 5rem;
+    justify-content: space-between;
     padding-bottom: 8.64rem;
 }
 
@@ -390,7 +391,7 @@ body {
 
 .navegacao-dados-filme .lista-navegacao {
     position: absolute;
-    left: 5.7rem;
+    left: 7%;
     display: flex;
     list-style-type: none;
     text-align: center;

@@ -1,6 +1,28 @@
 @charset "UTF-8";
 
 
+@media screen and (max-width: 1120px) {
+ 
+    /* DESCRIÇÃO DO FILME */
+    .descricao {
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .navegacao-dados-filme .lista-navegacao {
+        top: 55rem;
+    }
+
+    .descricao .resumo-categoria {
+        width: 100%;
+    }
+
+    .avaliacao-filme {
+        width: 100%;
+    }
+    
+}
+
 @media screen and (max-width: 1070px) {
     
     .conteudo {
@@ -93,11 +115,21 @@
 
 }  
 
-@media screen and (max-width: 777px) {
+@media screen and (max-width: 768px) {
     
+    /* SIDEBAR */
+    .sidebar {
+        display: none;
+    }
+
+    /* CONTAINER */
+    .container {
+        margin-left: 0;
+    }
+
     .conteudo {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: minmax(300px, 1fr);
     } 
 
     .conteudo {
@@ -152,6 +184,17 @@
         ;
     } 
 
+    .conteudo .legenda-titulo, .conteudo .titulo {
+        padding-left: 2.1rem; 
+    }
+
+    /* BOX OLIVIA */
+    #olivia {
+        background-image: url(../img/box-olivia.webp);
+        grid-area: olivia;
+        height: 500px;
+    }
+
     /* RANK PESSOAS  */
     .aside-rank-pessoas {
         padding-bottom: 3rem;
@@ -159,23 +202,24 @@
 
     .aside-rank-pessoas p::after {
         content: '';
-        top: 4rem;
+        top: 5rem;
     }
 
     /* CARD RIHANNA */
     #rihanna {
         background-position: 50% 50%;
-        background-size: 656px;
+        background-size: 750px;
+        height: 500px;
     }
 
     /* SHOW TWITTER */
     .show-twitter {
-        background-size: 675px;
+        background-size: 753px;
     }
 
     /* CARD KILL */
     #kill {
-        background-size: 690px;
+        background-size: 750px;
     }
 
     /* ENLIGHTENED E TEEN CHOICE AWARDS */
@@ -198,6 +242,11 @@
 
     .lista-filmes .filme .background-img:hover {
         box-shadow: unset;
+    }
+
+    /* CARD SILICON */
+    .card-filme .legenda-titulo {
+        padding-right: 0;
     }
 
 } 
