@@ -183,6 +183,15 @@ body {
     width: 13px;
 }
 
+.cabecalho .botao-pesquisa input {
+    display: none;
+}
+
+.cabecalho .botao-pesquisa label {
+    display: none;
+}
+
+.cabecalho .botao-pesquisa label img {}
 
 .cabecalho .legenda {
     display: block;

@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+/* PALETA DE CORES e FONTES */
+:root {
+    --cor1: #FFF;
+    --cor2: #333333;
+    --cor3: #737373;
+    --cor4: #c4c2c2;
+    --cor5: #adadad;
+    --cor6: #817e79b3;
+    --cor7: #ff9317;
+    --cor8: #ffc917;
+    --cor9: #f2be5c;
+    --cor10: #00fcf3;
+    --cor11: #cc78f080;
+    --cor12: #60db44;
+    --cor13: #95db4f80;
+
+    --sans-pro: 'Source Sans Pro', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --promoximanovacond: 'Proximanova';
+}
 
 @media screen and (max-width: 1120px) {
  
@@ -135,13 +155,70 @@
         background-color: #ffb10a;
         padding: 1.7rem 0.9rem 1.5rem 0.9rem;
         position: absolute;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
     }
 
     /* LISTA DE LINKS */
     .lista-links {
         list-style: none;
+        position: fixed;
+        height: 100vh;
+        background-color: var(--cor3);
+        z-index: 1;
+        width: 16.5rem;
+        padding-top: 3.6rem;
+        left: -100%;
+    }
+
+    .lista-links .item a {
+        display: flex;
+        font-size: 1em;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 1px solid #0000001f;
+        padding: 1rem;
+    }
+
+    .lista-links .item a img {
+        margin: 0;
+    }
+
+    /* ÁREA DE PESQUISA */
+    .cabecalho .botao-pesquisa a {
         display: none;
+    }
+
+    .cabecalho .botao-pesquisa input {
+        outline: none;
+        display: none;
+        border: none;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        height: 3.6rem;
+        top: 0;
+        width: 16.5rem;
+        padding: 0 1rem;
+        font-size: 1.2em;
+        background-color: #ffffff4f;
+    }
+
+    .cabecalho .botao-pesquisa input:focus-visible {
+        box-shadow: inset 0px -3px 0px #00fcf3;
+    }
+
+    .cabecalho .botao-pesquisa label {
+        display: none;
+    }
+
+    .cabecalho .botao-pesquisa label img {
+        display: block;
+        position: fixed;
+        left: 13.7rem;
+        top: 0.9rem;
+        width: 1.6rem;
+        z-index: 1;
     }
 
     /* CONTAINER */
@@ -160,7 +237,7 @@
     .container-2 h1,
     .container-2 .creditos-elenco,
     .container-2 .descricao-filme .descricao {
-        padding-left: 3.5rem;
+        padding-left: 2.5rem;
     }   
 
     /* BOTÃO VER MAIS */
@@ -172,6 +249,16 @@
     .descricao-filme {
         padding-top: 1rem;
         position: relative;
+    }
+
+    .creditos-elenco > .nota {
+        height: 25px;
+        width: 25px;
+        padding-top: 0.5rem;
+    }
+
+    .creditos-elenco > .atencao-pais {
+        padding-top: 0.3rem;
     }
 
     /* RESUMO E A CATEGORIA DO FILME */
@@ -190,6 +277,10 @@
         width: 140px;
         height: 140px;
         padding-top: 1.7rem;
+    }
+
+    .creditos-elenco p {
+        font-size: 0.9em;
     }
     
     .avaliacao-filme .nota span {
@@ -345,6 +436,10 @@
     .avaliacao-filme {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .creditos-elenco > .nota {
+        width: 30px;
     }
 
     /* ÁREA NAVEGAÇÃO */
