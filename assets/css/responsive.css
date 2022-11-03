@@ -138,7 +138,10 @@
     }
     
     /* ESPAÇAMENTO A ESQUERDA DOS ELEMENTOS DO CONTAINER 2 */
-    .legenda, h1, .creditos-elenco, .descricao-filme .descricao {
+    .container-2 .legenda,
+    .container-2 h1,
+    .container-2 .creditos-elenco,
+    .container-2 .descricao-filme .descricao {
         padding-left: 1.5rem;
     }   
 
@@ -178,7 +181,7 @@
     /* ÁREA DE NAVEGAÇÃO */
     .navegacao-dados-filme {
         position: absolute;
-        top: 88%;
+        top: 87.8%;
         width: 100%;
         overflow-x: scroll;
     }
