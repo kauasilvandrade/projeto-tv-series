@@ -511,6 +511,10 @@
         flex-direction: column;
     }
 
+    .descricao-filme.abrir {
+        height: calc(62rem - 3rem);
+    }
+
     .container-2 .creditos-elenco > .nota {
         width: 30px;
     }
