@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <!-- SIDEBAR -->
     <div class="sidebar">
@@ -153,10 +153,15 @@
                     <input type="search" name="pesquisar" id="pesquisar" placeholder="Busca...">
 
                     <label for="pesquisar">
-                        <img src="assets/img/serch.png" alt="Logo de busca">
+                        <img src="assets/img/serch.png" alt="Logo de busca" class="imgBusca">
                     </label>
 
                 </div>
+
+                <!-- BOTÃO MOBILE -->
+                <button id="btnOpenMenu">
+                    <span class="hamburguer"></span>
+                </button>
 
                 <span class="legenda">Tv series</span>
 
@@ -891,6 +896,8 @@
         </footer>
 
     </div>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>

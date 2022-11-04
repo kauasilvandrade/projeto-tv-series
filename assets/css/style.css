@@ -193,6 +193,11 @@ body {
 
 .cabecalho .botao-pesquisa label img {}
 
+/* BOTÃO MOBILE */
+#btnOpenMenu {
+    display: none;
+}
+
 .cabecalho .legenda {
     display: block;
     font-family: var(--montserrat);
@@ -254,6 +259,7 @@ body {
 
 /* BOTÃO VER MAIS */
 .cabecalho #verMais {
+    height: 3rem;
     display: block;
     width: 100%;
     background-color: transparent;
@@ -276,7 +282,16 @@ body {
 
 /* DESCRIÇÃO DO FILME/SÉRIE */
 .descricao-filme {
-    display: none;
+    height: 0;
+    overflow-y: hidden;
+    visibility: hidden;
+    transition: all .6s;
+}
+
+/* CLASSE ATIVADA COM JAVASCRIPT */
+.descricao-filme.abrir {
+    height: calc(27.2rem - 3rem);
+    visibility: visible;
     padding-top: 4rem;
 }
 
@@ -284,7 +299,7 @@ body {
 .descricao {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 8.64rem;
+    padding-bottom: 4.64rem;
 }
 
 .descricao .resumo-categoria {
@@ -399,14 +414,11 @@ body {
 .navegacao-dados-filme {}
 
 .navegacao-dados-filme .lista-navegacao {
-    position: absolute;
-    left: 7%;
     display: flex;
     list-style-type: none;
     text-align: center;
     background-color: #1918178f;
-    width: 93%;
-    top: 41.3rem;
+    width: 100%;
 }
 
 .navegacao-dados-filme .lista-navegacao .item {
