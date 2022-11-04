@@ -21,7 +21,9 @@ const areaPesquisa = document.getElementById('pesquisar');
 
 const imgBusca = document.querySelector('.imgBusca');
 
-function abrirMenu() {
+function abrirMenu(event) {
+
+    event.preventDefault();
 
     menuSidebar.classList.toggle('ativado');
 
