@@ -1,17 +1,3 @@
-// MUDAR TAMANHO DE TELA PARA O MENU DESAPARECER
-function mudouTamanho() {
-    if (window.innerWidth <= 768) {
-
-        menuSidebar.classList.remove('ativado');
-
-        btnAbrirMenu.classList.remove('ativado');
-
-        areaPesquisa.classList.remove('ativado');
-        
-        imgBusca.classList.remove('ativado');
-    }
-}
-
 // BOTÃO DE ABRIR MENU E ÁREA DE PESQUISA
 const btnAbrirMenu = document.getElementById('btnOpenMenu');
 
