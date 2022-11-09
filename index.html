@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="assets/img/favicon" type="image/x-icon">
 
 </head>
-<body onresize="mudouTamanho()">
+<body>
 
     <!-- SIDEBAR -->
     <div class="sidebar">
@@ -40,7 +40,7 @@
         </div>
 
         <!-- LISTA DE LINKS -->
-        <ul class="lista-links">
+        <ul class="lista-links" id="menu" role="menu">
 
             <li class="item">
 
@@ -162,7 +162,12 @@
                 </div>
 
                 <!-- BOTÃO MOBILE -->
-                <button id="btnOpenMenu">
+                <button id="btnOpenMenu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Abrir menu"
+                >
                     <span class="hamburguer"></span>
                 </button>
 
@@ -182,12 +187,19 @@
                 </div>
 
                 <!-- BOTÃO EXPANDIR PARA VER MAIS -->
-                <button id="verMais">
+                <button id="btnVerMais"
+                aria-controls="verMais"
+                aria-label="Botão abrir seção ver mais"
+                aria-haspopup="true"
+                aria-expanded="false">
                     Expand to see More <i class="fa-solid fa-arrow-down"></i>
                 </button>
 
                 <!-- DESCRIÇÃO DO FILME/SÉRIE -->
-                <div class="descricao-filme">
+                <div class="descricao-filme"
+                role="ver mais"
+                id="verMais"
+                >
 
                     <!-- DESCRICÃO -->
                     <div class="descricao">

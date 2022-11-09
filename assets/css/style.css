@@ -258,7 +258,7 @@ body {
 .creditos-elenco p {}
 
 /* BOTÃO VER MAIS */
-.cabecalho #verMais {
+.cabecalho #btnVerMais {
     height: 3rem;
     display: block;
     width: 100%;
@@ -275,7 +275,7 @@ body {
     padding-right: 4rem;
 }
 
-.cabecalho #verMais i {
+.cabecalho #btnVerMais i {
     margin-left: 0.3rem;
     font-size: 0.7em;
 }
