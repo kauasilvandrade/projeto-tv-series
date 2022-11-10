@@ -1,37 +1,41 @@
 // BOTÃO DE ABRIR MENU E ÁREA DE PESQUISA
 const btnAbrirMenu = document.getElementById('btnOpenMenu');
 
-const menuSidebar = document.getElementById('menu');
-
-const areaPesquisa = document.getElementById('pesquisar');
-
-const imgBusca = document.querySelector('.imgBusca');
-
 function abrirMenu(event) {
 
+    // TIRAR OS PADRÕES 
     if (event.type === "touchstart") event.preventDefault();
 
+    const menuSidebar = document.getElementById('menu');
     menuSidebar.classList.toggle('ativado');
+
+    const areaPesquisa = document.getElementById('pesquisar');
+    areaPesquisa.classList.toggle('ativado');
+
+    const imgBusca = document.querySelector('.imgBusca');
+    imgBusca.classList.toggle('ativado');
 
     btnAbrirMenu.classList.toggle('ativado');
 
-    areaPesquisa.classList.toggle('ativado');
-
-    imgBusca.classList.toggle('ativado');
-
+    // TRUE E FALSE
     const ativado = btnAbrirMenu.classList.contains('ativado');
 
     event.currentTarget.setAttribute('aria-expanded', ativado);
 
     if (ativado) {
+
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+
     } else {
+
         event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+
     }
 
 }
 
 btnAbrirMenu.addEventListener('click', abrirMenu);
+
 btnAbrirMenu.addEventListener('touchstart', abrirMenu);
 
 // FUNCÃO PARA EXPANDIR A DESCRIÇÃO DO FILME
@@ -43,11 +47,12 @@ function expandirDescricao(event) {
 
     const filmeDescricao = document.getElementById('verMais');
 
-    verMais.classList.toggle('abrir');
+    filmeDescricao.classList.toggle('abrir');
 
+    // TRUE E FALSE
     const ativado = filmeDescricao.classList.contains('abrir');
 
-    event.currentTarget.setAttribute('aria-expanded', ativado)
+    event.currentTarget.setAttribute('aria-expanded', ativado);
 
     if (ativado) {
         event.currentTarget.setAttribute('aria-label', 'Botão fechar seção ver mais')
@@ -58,4 +63,5 @@ function expandirDescricao(event) {
 }
 
 btnExpandir.addEventListener('click', expandirDescricao);
+
 btnExpandir.addEventListener('touchstart', expandirDescricao);

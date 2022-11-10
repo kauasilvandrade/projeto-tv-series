@@ -36,13 +36,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Proximanova';
-    src: url('https://daks2k3a4ib2z.cloudfront.net/53921298a470cf0443ac7d21/53a26ffc64a4f9aa1001e60f_ProximaNovaCond-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
