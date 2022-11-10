@@ -513,7 +513,7 @@
 @media screen and (max-width: 440px) {
 
     /* CLASSE ATIVADA COM JAVACRIPT */
-    .descricao-filme.abrir {
+    #verMais.abrir {
         height: calc(62rem - 3rem);
     }
 
