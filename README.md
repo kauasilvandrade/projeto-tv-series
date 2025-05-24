@@ -16,6 +16,8 @@ Este projeto foi criado com o objetivo de treinar a criação de layouts com HTM
 
 https://kauasilvandrade.github.io/projeto-tv-series/
 
+![tv-series](https://github.com/user-attachments/assets/c64d803d-c07a-4a0f-99ca-b732ae2f9328)
+
 ## 🖥️ Como Executar
 
 1. Clone o repositório:
